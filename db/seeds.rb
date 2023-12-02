@@ -5,3 +5,40 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+customers = [
+{
+name: 'Luke Skywalker',
+address: '1 Phantom Way',
+phone: '123123123',
+email: 'example@example.com',
+},
+{
+name: 'Luke Skywalker',
+address: '1 Phantom Way',
+phone: '123123123',
+email: 'example@example.com',
+},
+{
+name: 'Jake Sheldon',
+address: '1 Phantom Way',
+phone: '123123123',
+email: 'example@example.com',
+},
+{
+name: 'Luke Skywalker',
+address: '1rt Phantom Way',
+phone: '123123123',
+email: 'example@example.com',
+},
+{
+name: 'Lisa Simpson',
+address: '13 Phantom Way',
+phone: '123123123',
+email: 'example@example.com',
+},
+]
+
+customers.each do |each_customer|
+    Customer.create each_customer
+    puts "creating customer #{each_customer}"
+end   
